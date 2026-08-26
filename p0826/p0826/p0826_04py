@@ -56,11 +56,11 @@ print(a%2==1)
 
 
 
-eng
-math
+# eng
+# math
 
-total
-avg
+# total
+# avg
 
 
 
