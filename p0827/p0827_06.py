@@ -75,7 +75,7 @@ reuslt = "합격" if score>=60 else "불합격"
 # # 70-72점 C-, 73-77 C, 78 C+
 # # 랜덤점수 출력하시오.
 
-# num = random.randint(0,100)
+# num = radom.randint(0,100)
 # if num>=90:
 #     if num>=99:
 #         print("A+")
