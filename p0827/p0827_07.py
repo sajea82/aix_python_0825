@@ -1,11 +1,10 @@
 
-
-# 원하는값 in 리스트, 원하는값 not in 리스트
-arr = [1,3,5,7,9]
-if 7 in arr:
-    print("7이 있습니다.")
-else:
-    print("원하는 수가 있습니까.")
+# # 원하는값 in 리스트, 원하는값 not in 리스트
+# arr = [1,3,5,7,9]
+# if 7 in arr:
+#     print("7이 있습니다.")
+# else:
+#     print("원하는 수가 있습니까.")
 
 # # 정렬 순차정렬(sort), 역순정렬 sort(reverse=True)
 # arr = [1,15,8,23,2]
