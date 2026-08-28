@@ -4,7 +4,7 @@ float1 = 1.1 # 숫자 - 실수형
 bool = True # 불형
 
 # 리스트 - 모든타입이 들어올수 있음(리스트안에 리스트가능)
-arr = [str1,int1,float,bool1,[1,2,3,"안녕"]]
+arr = [str1,nit1,float,bool1,[1,2,3,"안녕"]]
 
 # 자료형 확인 - type()
 print(int(float1))

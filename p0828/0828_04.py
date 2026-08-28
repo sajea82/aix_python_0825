@@ -1,6 +1,6 @@
 # 문자열함수
 # split, strip, replace, find, rfind
-
+# upper-영문자 모두 대문자로 출력,
 
 
 
