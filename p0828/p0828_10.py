@@ -34,7 +34,7 @@ for i in range(100):
     no = i+1
     name = input("이름입력 : ")
     kor = int(input("국어점수 입력 : "))
-str.append([no,name,kor])
+stu.append([no,name,kor])
 
 for i in range(2):
     print("{}\t{}\t{}".format(stu[i][0],stu[i][1],stu[i][2]))
