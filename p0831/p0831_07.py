@@ -39,7 +39,8 @@ for i in  myNum:
 print("로또번호 : ",lotto)
 print("로또개수 : ",myNum)
 print("정답확인 : ",answer)
-print("정# i = 0
+print("정답개수 : ",count)
+
 # while i<6:
 #     no = int(input("숫자입력 : "))
 #     if no not in myNum:

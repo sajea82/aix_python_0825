@@ -3,7 +3,7 @@
 #랜덤 숫자를 맞출때까지 무한반복 프로그램 구현하시요.
 import random
 ran1 = random.randint(1,100) # 랜덤숫자 생성
-my_list = 0 # 내가 입력한 숫자 모두저장
+my_list = [] # 내가 입력한 숫자 모두저장
 myNum = 0 #  내가 입력한 숫자 변수
 answer = 0 # 정답변수
 while True:
@@ -11,17 +11,17 @@ while True:
     my_list.append(myNum)
 
     # 랜덤숫자와 입력숫자가 같은지 비교
-    if myNum == random:
+    if myNum == ran1:
         answer = myNum
         print("정답입니다.")
         break
-    elif myNum>random:
+    elif myNum>ran1:
         print("입력한 숫자가 더 큽니다. 작은수 입력!!")
     else:
         print("입력한 숫자가 더 작습니다. 큰수 입력!!")
 
 print("정답 : ",answer)
-print("정답 : "my_list[-1])
+print("정답 : ",my_list[-1])
 print("입력한모든 숫자 : ",my_list)
 
 print("프로그램 종료")
