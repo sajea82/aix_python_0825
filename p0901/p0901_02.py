@@ -18,7 +18,13 @@ while True:
         print("정답입니다.")
         break
     elif in_no > ran_no: 
-        print(in_no,"")
+        print(in_no,"보다 작은수를 입력하세요")
+    else:
+        print(in_no,"보다 큰수를 입력하세요.")
+
+# 결과
+print("입력한 모든 리스트 : ",in_arr)
+print("정답 : ",in_arr[-1])
 
 
 
