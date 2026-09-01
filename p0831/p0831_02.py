@@ -2,29 +2,29 @@
 # 홍길동 70
 # 유관순 100
 # 이순신 90
-name = []
-kor = []
-eng = []
-math = []
-total = []
-avg = []
-for i in range(3):
-    name.append(input("이름입력 :"))
-    k_input = int(input("국어점수입력 : "))
-    kor.append(k_input)
-    e_input = int(input("영어점수입력 : "))
-    eng.append(e_input)
-    m_input = int(input("수학점수입력 : "))
-    math.append(m_input)
-    total.append(k_input+e_input+m_input)
-    avg.append((k_input+e_input+m_input)/3)
+# name = []
+# kor = []
+# eng = []
+# math = []
+# total = []
+# avg = []
+# for i in range(3):
+#     name.append(input("이름입력 :"))
+#     k_input = int(input("국어점수입력 : "))
+#     kor.append(k_input)
+#     e_input = int(input("영어점수입력 : "))
+#     eng.append(e_input)
+#     m_input = int(input("수학점수입력 : "))
+#     math.append(m_input)
+#     total.append(k_input+e_input+m_input)
+#     avg.append((k_input+e_input+m_input)/3)
 
-print("[ 학생성적 ]")
-print("번호\t이름\t국어\t영어\t수학\t합계\t평균\t")
-print("-"*60)
-for i in range(len(name)):
-    print(f"{i+1}\t{name[i]}\t{kor[i]}\t{eng[i]}\t{math[i]}\
-\t{total[i]}\t{avg[i]:.2f}")
+# print("[ 학생성적 ]")
+# print("번호\t이름\t국어\t영어\t수학\t합계\t평균\t")
+# print("-"*60)
+# for i in range(len(name)):
+#     print(f"{i+1}\t{name[i]}\t{kor[i]}\t{eng[i]}\t{math[i]}\
+# \t{total[i]}\t{avg[i]:.2f}")
 
 # list_a = ["바나나","딸기","사과"]
 # j = 1
@@ -147,7 +147,16 @@ for i in range(len(name)):
 #         print("{}X{}={}".format(j,i,i*j),end="\t") # i,j 자리변경을로 출력이 바뀜
 #     print()
 
+for step in range(2,10,3):
+    for i in range(step, min(step + 3,10)):
+        print(f"[{i}단]",end="\t")
+    print()
+    for i in range(1,10):
+        for j in range(step, min(step +3, 10)):
+            print("{}X{}={}".format(j,i,i*j),end="\t") # i,j 자리변경을로 출력이 바뀜
+        print()
 
+    print()
 
 
 
