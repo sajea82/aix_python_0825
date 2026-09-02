@@ -1,14 +1,14 @@
-# 타입 확인
-a = 100
-b = 10.1
-c = "안녕"
-d = True
-# c가 무슨타입?
-# 타입 확인방법 type(a)
-print(type(a))
-print(type(b))
-print(type(c))
-print(type(d))
+# # 타입 확인
+# a = 100
+# b = 10.1
+# c = "안녕"
+# d = True
+# # c가 무슨타입?
+# # 타입 확인방법 type(a)
+# print(type(a))
+# print(type(b))
+# print(type(c))
+# print(type(d))
 
 # a = 9
 # b = 4
@@ -48,4 +48,4 @@ print(type(d))
 
 # 예약어는 변수로 사용할수 없음.
 # True = 1
-print = 5
+# print = 5

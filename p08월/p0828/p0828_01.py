@@ -15,8 +15,8 @@ avg = total/3     # 나눗셈 -> float
 print("[학생성적프로그램]")
 print("번호\t이름\t국어\t영어\t수학\t합계\t평균")
 print("-"*60) #문자*반복
-print(f"{no}\t{name}\t{kor}\t{eng}\t{math}\t{total}\t{avg:.2g}")
-print("{}\t{}\t{}\t{}\t{}\t{}\t{:.2f}". format(no,name,kor,eng,math,total,avg))
+print(f"{no}\t{name}\t{kor}\t{eng}\t{math}\t{total}\t{avg:.2f}")
+# print("{}\t{}\t{}\t{}\t{}\t{}\t{:.2f}". format(no,name,kor,eng,math,total,avg))
 
 
 

@@ -19,7 +19,7 @@
 # kor2 = int(input("국어점수 입력>> "))
 # eng2 = int(input("영어점수 입력>> "))
 # math2 = int(input("수학점수 입력>> "))
-# total2 = kor+eng+math
+# total2 = kor2+eng2+math2
 # avg2 = total2/3
 
 # print("-"*60)

@@ -1,16 +1,16 @@
-# 원의 반지름을 입력받아
-# 원의 넓이를 출력하시오.
-length = int(input("반지름을 입력하세요."))
-pi = 3.14
-# pi * (length ** 2) 
-result = pi * (length **2)
-# 원의 넓이 : 100m2
-print("원의 넓이 : ",result)
+# # 원의 반지름을 입력받아
+# # 원의 넓이를 출력하시오.
+# length = int(input("반지름을 입력하세요."))
+# pi = 3.14
+# # pi * (length ** 2) 
+# result = pi * (length **2)
+# # 원의 넓이 : 100m2
+# print("원의 넓이 : ",result)
 
-# 2 * pi * length
-result2 = 2 * pi * length
-# 원의 둘레 : cm
-print("원의 둘레 : {:.2f}".format(result2))
+# # 2 * pi * length
+# result2 = 2 * pi * length
+# # 원의 둘레 : cm
+# print("원의 둘레 : {:.2f}".format(result2))
 
 
 # a = 10
@@ -23,13 +23,11 @@ print("원의 둘레 : {:.2f}".format(result2))
 # print("안녕"+"하세요") #안녕하세요
 
 
-
-
 # # 번호,이름,국어,영어,수학을 입력받아
 # # 번호,이름,국어,영어,수학,합계, 평균을 출력하시오.
 # # 1 홍길동 100 100 100 300 100.0
 
-# # 1 홍길동
+# # 1 홍길동 100 100 100 300 100.0
 # no = input("번호 입력>>")
 # name = input("이름 >>")
 # kor = int(input("국어점수 입력>>"))
@@ -39,14 +37,13 @@ print("원의 둘레 : {:.2f}".format(result2))
 # avg = total/3
 
 
-
-# # 2 유관순 100 100 91
+# # 2 유관순 100 100 90 290 96.67
 # no2 = input("번호 입력>> ")
 # name2 = input("이름 입력>> ")
 # kor2 = int(input("국어점수 입력>> "))
 # eng2 = int(input("영어점수 입력>> "))
 # math2 = int(input("수학점수 입력>> "))
-# total2 = kor+eng+math
+# total2 = kor2+eng2+math2
 # avg2 = total2/3
 
 # print("-"*60)

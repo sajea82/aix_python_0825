@@ -1,15 +1,13 @@
-a = 9
-b = 2
-print(a/b)  
-print(a//b) # 몫
-print(a%b) # 나머지
+# a = 9
+# b = 2
+# print(a/b)  
+# print(a//b) # 몫
+# print(a%b) # 나머지
 
-# a = 5
-# 짝수,홀수인지?
-a = int(input("숫자를 입력하세요."))
-print(a%2==1)
-
-
+# # a = 5
+# # 짝수,홀수인지?
+# a = int(input("숫자를 입력하세요."))
+# print(a%2==1)
 
 
 # print(100**10)
@@ -22,11 +20,9 @@ print(a%2==1)
 # print(int("101",2))
 
 
-
 # 에러
 # a = 1,b = 2
 # print(a,b)
-
 
 
 # a = b =1
@@ -36,8 +32,6 @@ print(a%2==1)
 
 # a,b = 1,2
 # print(a,b)
-
-
 
 
 
@@ -61,7 +55,6 @@ print(a%2==1)
 
 # total
 # avg
-
 
 
 
