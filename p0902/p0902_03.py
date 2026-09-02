@@ -1,10 +1,21 @@
-# 
+# isdigit() : 숫자인지 확인 / isalpha(),isalnum()
+# a = int(input("숫자를 입력하세요.")) # 바로 int() 에러 안됨
+while True:
+    a = input("숫자를 입력하세요.")
+    if a.isdigit():
+        a = int(a)
+        break
+    else:
+        print("숫자가 아닙니다. 다시 입력하세요.")
+    print(a)
+
+
+
 # split 분리, *전개연산자
 str = input("날짜를 입력하세요.(2026/09/02)>>")
 str_arr = str.split("/")
 print("{}년 {}월 {}일".format(*str_arr))
 # 2026년 9월 2일
-
 
 
 # # map, join -> 문자열
