@@ -12,8 +12,8 @@ while True:
     choice = int(input("원하는 번호를 입력하세요.>> "))
     if choice == 1:
         print(input("[ 학생성적입력 ]"))
-        while tuple:
-            no = len(stu_name)+1
+        while True:
+            no = len(stu_list)+1
             print("자동번호 : ",no)
             name = input("이름입력(종료하려면 0) : ")
             if name=="0": break
@@ -27,16 +27,40 @@ while True:
             print()
         
     elif choice == 2:
-      
-    elif choice == 3:
-        
+        print("[ 학생성적출력 ]")
+        print("입력된 학생성적 : ",len(stu_list))
+        print("번호\t이름\t국어\t영어\t수학\t합계\t평균")
+        print("-"*60)
+        for s in stu_list:
+            print("{}\t{}\t{}\t{}\t{}\t{}\t{:.2f}".format(*s))
 
+    elif choice == 3:
+        print("[ 학생성적수정 ]")
+        
     elif choice == 4:
-       
+        print("[ 학생성적삭제 ]")
 
     else:
+        print("[ 프로그램종료 ]")
 
 
+# import random
+# a_arr = list(range(1,26))
+# random.shuffle(a_arr)
+# while True:
+#     print(" "*15,end="")
+#     print("[ 빙고게임 ]")
+#     print("-"*50)
+#     for i,v in enumerate(a_arr):
+#         if (i+1)%5!=0:
+#             print(v,end="\t")
+#         else:
+#             print(v)
+#     print("-"*50)
+#     num = int(input("원하는 번호를 입력하세요.>> "))
+#     if num in a_arr:
+#         idx = a_arr.index(num)
+#         a_arr[idx] = "X"
 
 
 
