@@ -49,7 +49,8 @@ print("번호\t이름\t국어\t영어\t수학\t합계\t평균")
 print("-"*60)
 for s in stu_list:
     print("{}\t{}\t{}\t{}\t{}\t{}\t{:.2f}".format(*s))
-# print(stu_list)
+
+print(stu_list)
 
 
 
