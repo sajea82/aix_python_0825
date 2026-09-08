@@ -17,7 +17,7 @@ def s_mainPrint():
 
 # 학생성적입력함수선언
 def s_input():
-    global sno
+    global sno # 전역변수 
     while True: #입력을 멈추고 싶을때까지 입력받음
         no = sno
         print("[ 학생성적입력 ]")
