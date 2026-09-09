@@ -3,23 +3,23 @@ class Student:
     # 생성자
     def __init__(self,*args):
         if len(args) == 5: # 학생성적입력에서 객체 넣기
-            self.no = args[0]
-            self.name = args[1]
-            self.kor =args[2] 
-            self.eng = args[3]
-            self.math = args[4]
+            self.no = args[0]   # no
+            self.name = args[1] # name
+            self.kor =args[2]   # kor
+            self.eng = args[3]  # eng
+            self.math = args[4] # math
             self.total = self.kor+self.eng+self.math
             self.avg = self.total/3
             self.rank = 0
         elif len(args) == 8: # stu.txt 파일에서 객체에 넣기
-            self.no = args[0]
-            self.name = args[1]
-            self.kor =args[2] 
-            self.eng = args[3]
-            self.math = args[4]
-            self.total =args[5]
-            self.avg = args[6]
-            self.rank = args[7]
+            self.no = args[0]   # no
+            self.name = args[1] # name
+            self.kor =args[2]   # kor
+            self.eng = args[3]  # eng
+            self.math = args[4] # math
+            self.total =args[5] # total
+            self.avg = args[6]  # avg
+            self.rank = args[7] # rank
     # 문자열 함수
     def __str__(self):
         return f"{self.no}\t{self.name}\t{self.kor}\t{self.eng}\t{self.math}\t{self.total}\t{self.avg:.2f}\t{self.rank}"
