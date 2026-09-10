@@ -9,4 +9,11 @@ while True:
     print("4. 학생성적저장")
     print("0. 프로그램종료")
     print("-"*60)
-    choice = input()
+    choice = int(input("원하는 번호를 입력하세요.>> "))
+    print()
+
+    if choice == 1:
+        while True:
+            no = sno
+            print("[ 학생성적입력 ]")
+            name = input(f"{no}")
