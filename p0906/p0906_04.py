@@ -67,7 +67,22 @@ while True:
         if temp == 0:
             print(f"{name} 학생이 없습니다.")
 
+    # 학생성적수정
+    if choice == 3:
+        print()
+        print("[ 학생성적수정 ]")
+        name = input("찾으려는 학생을 입력하세요>> ")
+        temp = 0
+        for i,s in enumerate(stu):
+            if s["name"] == name:
+                print(f"{name} 학생을 찾았습니다.")
+                temp = 1
 
+                print("[ 과목선택 ]")
+                print("1. 국어 2. 영어 3. 수학")
+                choice = int(input("원하는 과목을 선택하세요.>> "))
+
+                print(f"현재{title}")
 
 
 

@@ -54,7 +54,7 @@ while True:
                 print(f"{name} 학생을 찾았습니다.")
                 temp = 1
 
-                print("[ 과목수정선택 ]")
+                print("[ 수정과목선택 ]")
                 print("1. 국어 2. 영어 3.수학")
                 choice = int(input("원하는 번호입력 : "))
 
