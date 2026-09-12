@@ -94,7 +94,7 @@ while True:
             print("학생성적이 등록되었습니다.")
             print()
 # 학생성적출력
-    if choice == 2:
+    elif choice == 2:
         print("[ 학생성적출력 ]")
         print("-"*60)
         print("번호\t이름\t국어\t영어\t수학\t합계\t평균")
