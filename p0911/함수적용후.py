@@ -88,7 +88,7 @@ while True:
     choice = main_screen()
 
     if choice == 1:
-       stu_input()
+        stu_input()
 
     elif choice == 2:
         stu_output()

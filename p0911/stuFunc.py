@@ -1,6 +1,7 @@
-total = ["번호","이름","국어","영어","수학","합계","평균"]
-k_total = ["no","name","kor","eng","math","total","avg"]
-stuList =[]
+
+from student import Student
+from students import Students
+stus = Students()
 stuNum = 1
 
 def main_screen():
@@ -15,31 +16,25 @@ def main_screen():
     return choice
 
 def stu_input():
-    global stuList
+    global stuNum
     while True:
-        no = len(stuList) + 1
+        no = len(stuNum) + 1
         print("[ 학생성적입력 ]")
-        name = input(f"{no}번째 학생이름입력(0. 이전화면이동):")
+        name = input(f"{stuNum}번째 학생이름입력(0. 이전화면이동):")
         if name == "0": break
         kor = int(input("국어성적입력 : "))
         eng = int(input("영어성적입력 : "))
         math = int(input("수학성적입력 : "))
         total = kor + eng + math
         avg = total/3
-        stuList.append({"no":no,"name":name,"kor":kor,"eng":eng,"math":math,"total":total,"avg":avg})
-        print(f"{name}학생이 저장되었습니다.")
+        stus.add(Student(no,name,kor,eng,math))
+        # stuList.append({"no":no,"name":name,"kor":kor,"eng":eng,"math":math,"total":total,"avg":avg})
+        print(f"{stuNum},{name}학생이 저장되었습니다.")
         print()
 
 def stu_output():
-    print()
-    print("[ 학생성적출력 ]")
-    print("-"*60)
-    print(f"{'번호'}\t{'이름'}\t{'국어'}\t{'영어'}\t{'수학'}\t{'합계'}\t{'평균'}")
-    print("-"*60)
-    for s in stuList:
-        print(f"{s['no']}\t{s['name']}\t{s['kor']}\t{s['eng']}\t{s['math']}\t{s['total']}\t{s['avg']:.2f}")
-        print()
-
+    stus.print()
+    
 def stu_update():
     print()
     print("[ 학생성적수정 ]")
@@ -83,3 +78,18 @@ def writeStu():
     
                 print("성적파일이 저장되었습니다.")
                 print()
+
+def readStu():
+    global stuNum
+    with open("c:/aaa/stu.txt","r",encoding="utr-8") as f:
+        while True:
+            str = f.readline()
+            if str == "":break
+            stu = str.split(",")
+            for i,s in enumerate(stu):
+                if 0<=i<=1: continue
+                elif 2<=i<=5: stu[i] = int(s.strip())
+                elif i==6: stu[i] = float(s.strip())
+                elif i==7: stu[i] = int(s.strip())
+            stus.add(Student(stu[1],stu[2],stu[3],stu[4],stu[5],stu[6],stu[7]))
+            stuNum = len(stus.slist)+1
